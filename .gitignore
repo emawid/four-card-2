@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+/design
+index (kopia).html
+README (kopia).md
+README-template.md
+style-guide.md
+
+
 # User-specific files
 *.rsuser
 *.suo
