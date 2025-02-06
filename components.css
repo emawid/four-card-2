@@ -4,12 +4,13 @@ body {
 
 main {
   margin-inline: auto;
-  justify-items: center;
+  /* justify-items: center; */
   padding: 85px 32px 78px 32px;
   /* outline: 1px solid red; */
 }
 
 #headline {
+  display: grid;
   text-align: center;
   margin-bottom: 76px;
   /* outline: 1px solid red; */
@@ -17,6 +18,7 @@ main {
 
 .headline-text {
   width: clamp(311px, calc(19rem + 15vw), 540px);
+  justify-self: center;
 }
 
 .headline-1 {
@@ -60,7 +62,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
-  place-items: center;
+  /* place-items: center; */
   /* outline: 1px solid red; */
 }
 
@@ -72,6 +74,7 @@ main {
 
 #card-supervisor {
   border-top-color: var(--cyan);
+  align-self: center;
 }
 
 #card-teambuilder {
@@ -84,9 +87,13 @@ main {
 
 #card-calculator {
   border-top-color: var(--blue);
+  align-self: center;
 }
 
 @media (min-width: 1440px) {
+  #headline {
+    margin-bottom: 64px;
+  }
   #content {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
